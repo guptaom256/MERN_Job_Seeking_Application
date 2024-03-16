@@ -18,7 +18,7 @@ const MyJobs = () => {
     const fetchJobs = async () => {
       try {
         const { data } = await axios.get(
-          "http://localhost:8000/api/v1/job/getmyjobs",
+          "https://worried-shawl-eel.cyclic.app/api/v1/job/getmyjobs",
           { withCredentials: true }
         );
         setMyJobs(data.myJobs);

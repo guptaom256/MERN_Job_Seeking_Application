@@ -23,7 +23,7 @@ const Register = () => {
   const handleRegister = async (e) => {
     e.preventDefault();
     try {
-      const { data } = await axios.post("http://localhost:8000/api/v1/user/register",
+      const { data } = await axios.post("https://worried-shawl-eel.cyclic.app/api/v1/user/register",
         { name, phone, email, role, password },
         {
           headers: {

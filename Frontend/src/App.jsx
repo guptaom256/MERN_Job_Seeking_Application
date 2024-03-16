@@ -23,7 +23,7 @@ const App = () => {
   useEffect(() => {
     const fetchUser = async () => {
       try {
-        const response = await axios.get("http://localhost:8000/api/v1/user/getuser",
+        const response = await axios.get("https://worried-shawl-eel.cyclic.app/api/v1/user/getuser",
         { withCredentials: true });
         
         setUser(response.data.user);

@@ -36,7 +36,7 @@ const PostJob = () => {
 
     await axios
       .post(
-        "http://localhost:8000/api/v1/job/post",
+        "https://worried-shawl-eel.cyclic.app/api/v1/job/post",
         fixedSalary.length >= 4
           ? {
               title,
