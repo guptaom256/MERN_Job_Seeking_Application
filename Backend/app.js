@@ -33,6 +33,14 @@ app.use('/api/v1/user', userRouter);
 app.use('/api/v1/application', applicationRouter);
 app.use('/api/v1/job', jobRouter);
 
+
+app.get("/", (req, res)=> {
+  res.json({
+    success: true,
+    message: "Hello from the other side!"
+  })
+})
+
 dbConnection();
 
 app.use(errorMiddleware);
